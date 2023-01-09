@@ -49,7 +49,7 @@ export default function ActivityList() {
                 }
               </Row>
               : <div data-cy="activity-empty-state" style={{ display: 'flex', justifyContent: 'center' }}>
-                <Col><img src={person} /></Col>
+                <Col><img width={'100%'} src={person} /></Col>
               </div>
       }
     </>

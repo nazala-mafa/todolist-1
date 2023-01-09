@@ -27,7 +27,7 @@ export default function ActivityDetailTitle() {
     <>
       <Row>
         <div style={{ display: 'flex', gap: '1rem' }}>
-          <Link to={'/'} style={{ display: 'flex' }} data-cy="todo-back-button">
+          <Link to={'/'} data-cy="todo-back-button" className='back-button'>
             <img src={backButton} />
           </Link>
           {

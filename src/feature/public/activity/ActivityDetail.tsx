@@ -26,11 +26,15 @@ export default function ActivifyDetail() {
   return (
     <>
       <Row justify={'space-between'} style={{ marginBottom: '1rem' }}>
-        <ActivityDetailTitle />
-        <Row style={{ alignItems: 'center', gap: '1rem' }}>
-          <TodoSortButton />
-          <Button onClick={addNewTodo} icon={<PlusOutlined />} type='primary' shape={'round'} size="large" data-cy="todo-add-button">Tambah</Button>
-        </Row>
+        <Col xs={24}>
+          <ActivityDetailTitle />
+        </Col>
+        <Col xs={24} style={{ display: 'flex', justifyContent: 'end' }}>
+          <Row style={{ alignItems: 'center', gap: '1rem', justifyItems: 'right' }}>
+            <TodoSortButton />
+            <Button onClick={addNewTodo} icon={<PlusOutlined />} type='primary' shape={'round'} size="large" data-cy="todo-add-button">Tambah</Button>
+          </Row>
+        </Col>
       </Row>
 
       {
@@ -48,7 +52,7 @@ export default function ActivifyDetail() {
           </Row>
         ) : (
           <div style={{ display: 'flex', justifyContent: 'center' }} data-cy="todo-empty-state">
-            <img src={person} />
+            <img width={'100%'} src={person} />
           </div>
         )
       }

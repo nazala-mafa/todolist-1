@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
           </div>
         </AntLayout.Header>
         <AntLayout.Content style={{ margin: '0 16px' }} className="container">
-          <div style={{ padding: 24, minHeight: '100vh', background: colorBgContainer }}>
+          <div style={{ minHeight: '100vh', background: colorBgContainer }} className="content">
             {children}
           </div>
         </AntLayout.Content>
